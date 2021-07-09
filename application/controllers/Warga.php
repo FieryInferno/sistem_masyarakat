@@ -105,4 +105,11 @@ class Warga extends CI_Controller {
     $dompdf->render();
     $dompdf->stream($filename, array("Attachment" => 0) );
   }
+
+  public function vaksin(Type $var = null)
+  {
+    $data['konten'] = 'warga/vaksin';
+    $data['vaksin'] = $this->WargaModel->getVaksinCovid();
+		$this->load->view('halamanAwal', $data);
+  }
 }

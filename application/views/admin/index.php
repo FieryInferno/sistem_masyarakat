@@ -69,7 +69,7 @@
 </head>
 
 <body>
-  <!-- <aside id="left-panel" class="left-panel">
+  <aside id="left-panel" class="left-panel">
     <nav class="navbar navbar-expand-sm navbar-default">
 
       <div class="navbar-header">
@@ -106,6 +106,9 @@
           <li>
             <a href="<?= base_url(); ?>admin/bantuan/bst"> <i class="menu-icon fa fa-laptop"></i>Data BST</a>
           </li>
+          <li>
+            <a href="<?= base_url(); ?>admin/vaksin_covid"> <i class="menu-icon fa fa-laptop"></i>Data Vaksin Covid</a>
+          </li>
           <h3 class="menu-title">Informasi Desa</h3>
           <li>
             <a href="<?= base_url(); ?>admin/visi_misi.html"> <i class="menu-icon fa fa-laptop"></i> Visi Misi</a>
@@ -120,7 +123,7 @@
         </ul>
       </div>
     </nav>
-  </aside> -->
+  </aside>
 
   <!-- Left Panel -->
 

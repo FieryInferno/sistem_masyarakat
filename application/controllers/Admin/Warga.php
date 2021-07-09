@@ -6,6 +6,14 @@ use Dompdf\Dompdf;
 use Dompdf\Options;
 
 class Warga extends CI_Controller {
+
+  public function __construct()
+  {
+    parent::__construct();
+    if (!$this->session->login) {
+      redirect('404_override');
+    }
+  }
   
 	public function index()
 	{

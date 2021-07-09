@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 $route['default_controller']    = 'HalamanAwal';
-$route['404_override']          = '';
+$route['404_override']          = 'HalamanError';
 $route['translate_uri_dashes']  = FALSE;
 
 $route['admin.html']                          = 'Admin/Admin';
@@ -52,3 +52,4 @@ $route['bantuan/(:any)']            = 'Bantuan/index/$1';
 $route['bantuan/(:any)/cetak.html'] = 'Bantuan/cetak/$1';
 $route['visi_misi.html']            = 'Warga/visiMisi';
 $route['berita_desa.html']          = 'Warga/beritaDesa';
+$route['warga/vaksin_covid']        = 'Warga/vaksin';
